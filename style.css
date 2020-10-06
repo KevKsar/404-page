@@ -34,44 +34,69 @@ h2{
     margin-bottom: 0;
 }
 
-#arrow{
-    margin-top: 0;
-    position: relative;
-    transition: position 4s linear 1s;
-    z-index: 1;
-}
 
-#arrow:hover{
+#arrow{
+    width: 30px;
+    height: 30px;
     position: relative;
-    top: 30px;
-}
+    margin: 0 auto;
+    animation-name: anim-3;
+    animation-duration: 3s;  
+    animation-delay: ;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes anim-3 {
+    from {top: -400px; width: 30px; height: 30px;}
+    to {top: 25px; width: 70px; height: 60px;}
+  }
 
 #logo-git {
     height: 15px;
     position: relative;
     z-index: 2;
     transition: height 0.7s ease 0.2s;
- 
 }
 
-#logo-git:hover{
-    
-    height: 50px;
-}
+
+  #logo-git{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    animation-name: anim2;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes anim2 {
+    0% {top: -400px; width: 30px; height: 30px;}
+    85% {top: 10px; width: 60px; height: 60px;}
+    100% {top: 10px; width: 80px; height: 80px;}
+  }
 
 a{
     font-size: 0.75cm;
     display: block;
-    text-align: center;
     text-decoration: none;
     transition: font-size 0.7s ease 0.2s;
-    
-}
-
-a:hover{
-    font-size: 1.5cm;
 }
 
 a:visited{
      color: grey;
  }
+
+ a {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes example {
+    from {top: -400px; font-size: 0.75cm;}
+    to {top: 0px; font-size: 1.5cm;}
+  }
